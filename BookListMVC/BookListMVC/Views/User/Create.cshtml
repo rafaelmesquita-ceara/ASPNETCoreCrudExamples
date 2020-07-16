@@ -1,0 +1,38 @@
+﻿
+@model BookListMVC.Models.User
+
+<link rel="stylesheet" href="~/css/logon.css" />
+<link rel="stylesheet" href="~/css/style.css" />
+<div class="logon-container">
+
+
+    <section class="apresentation">
+        <h1>Bem vindo ao BookListMVC!</h1>
+        <h2>
+            Cadastre-se para poder aproveitar ao máximo nossos recursos e junte-se a mais de @ViewBag.Msg adoradores de livros
+        </h2>
+        <h2>Todos os campos são obrigatorios </h2>
+    </section>
+    <section class="form" style="margin-top:125px">
+
+        <form method="post">
+            <h1>Faça seu cadastro</h1>
+            <input type="text" placeholder="Seu nome completo" asp-for="CH_Name" />
+            <span asp-validation-for="CH_Name" class="text-danger"></span>
+
+            <input type="text" placeholder="Seu nome de usuário" asp-for="CH_Login" />
+            <span asp-validation-for="CH_Login" class="text-danger"></span>
+
+            <input type="password" placeholder="Sua senha" asp-for="CH_Password" />
+            <span asp-validation-for="CH_Password" class="text-danger"></span>
+
+            <input type="number" placeholder="Sua idade" asp-for="VL_Age" />
+            <span asp-validation-for="VL_Age" class="text-danger"></span>
+
+            <button type="submit" class="button">Cadastrar</button>
+
+
+
+        </form>
+    </section>
+</div>

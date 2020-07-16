@@ -1,0 +1,11 @@
+O que vi:
+	ASP.NET CORE MVC 2.1
+	Razor Pages
+	Validações com base no Modelo
+	Data Tables
+	Sweet Alert
+	Toastr
+	Entity Framework Code First
+	SQLite
+	Ajax
+	

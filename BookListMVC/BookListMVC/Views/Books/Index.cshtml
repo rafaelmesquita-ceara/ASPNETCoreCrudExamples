@@ -1,0 +1,33 @@
+﻿
+<br />
+<link rel="stylesheet" type="text/css" href="~/css/style.css">
+<div class="container row p-0 m-0">
+    <div class="row" style="margin-bottom : 50px">
+
+        <div class="col-xs-9">
+            <h2 class="text-info">Listagem de Livros</h2>
+        </div>
+        <div class="col-xs-3">
+            <a asp-action="Upsert" asp-controller="Books" class="button">
+                Adicionar Livro
+            </a>
+        </div>
+
+    </div>
+    <div class="col-12 border p-3">
+        <table id="DT_load" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/﻿bookList.js"></script>
+}

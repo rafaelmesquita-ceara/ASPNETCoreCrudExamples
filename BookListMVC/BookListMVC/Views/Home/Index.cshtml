@@ -1,0 +1,41 @@
+﻿@model BookListMVC.Models.User
+
+<link rel="stylesheet" href="~/css/logon.css" />
+<link rel="stylesheet" href="~/css/style.css" />
+<div class="logon-container">
+
+
+    <section class="apresentation">
+        <h1>Bem vindo ao BookListMVC!</h1>
+        <h2>
+            Esta aplicação serve para você armazenar seus livros favoritos. Basta se cadastrar ou logar e começar
+            a utilizar!
+        </h2>
+    </section>
+    <section class="form">
+
+        <form method="post" asp-action="Login" asp-controller="User">
+            <h1>Faça seu logon</h1>
+            <input type="text" placeholder="Seu nome de usuário" asp-for="CH_Login" />
+
+            <input type="password" placeholder="Sua senha" asp-for="CH_Password" />
+
+            <button type="submit" class="button">Entrar</button>
+
+
+
+        </form>
+        <p>Não possui cadastro? <a asp-area="" asp-controller="User" asp-action="Create">Clique Aqui!</a></p>
+    </section>
+
+    @section Scripts{
+        <script>
+            $(document).ready(function () {
+                console.log("@ViewBag.Msg");
+                if ("@ViewBag.Msg" === "fail") {
+                    toastr.error("Erro ao logar, verifique suas credenciais");
+                }
+            });
+        </script>
+    }
+</div>
