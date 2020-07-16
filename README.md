@@ -2,8 +2,8 @@
 Dois exemplos de CRUD utilizando ASP.NET Core
 
 # Links para os repositórios listados
-  -[API Feita em Asp.Net Core](https://github.com/rafaelmesquita-ceara/AspNetCoreAPI "Asp.NET Core API")
-  -[Projeto MVC feito em Asp.Net Core](https://github.com/rafaelmesquita-ceara/BookListMVC "Asp.NET Core MVC")
+  - [API Feita em Asp.Net Core](https://github.com/rafaelmesquita-ceara/AspNetCoreAPI "Asp.NET Core API")
+  - [Projeto MVC feito em Asp.Net Core](https://github.com/rafaelmesquita-ceara/BookListMVC "Asp.NET Core MVC")
   
  # CRUDs em outras linguagens/frameworks
  - [CRUD em WinForms utilizando C#](https://github.com/rafaelmesquita-ceara/note_app "WinForms Crud")
